@@ -1,5 +1,7 @@
 # dart-rag
 
+[![Tests](https://github.com/aromgu/dart-rag/actions/workflows/test.yml/badge.svg)](https://github.com/aromgu/dart-rag/actions/workflows/test.yml)
+
 한국 DART(전자공시시스템) 사업보고서를 근거로 재무 질문에 답하는 RAG(Retrieval-Augmented Generation) 시스템. KOSPI 시가총액 상위 100개 기업의 최신 사업보고서 99건, 156,707개 청크를 대상으로 한다.
 
 ```
@@ -57,7 +59,9 @@ PostgreSQL + pgvector (HNSW 인덱스)
 | 검색 | dense+sparse 가중합 하이브리드 + `BAAI/bge-reranker-v2-m3` 재순위 |
 | 생성 | `Qwen/Qwen2.5-3B-Instruct` (HuggingFace `transformers`, 로컬 GPU) |
 | API | FastAPI (비동기, 무상태 멀티턴) |
+| UI | Streamlit (채팅 인터페이스, API를 호출만 하는 얇은 클라이언트) |
 | 평가 | 자체 골드셋(154문항) + 결정론적 사실 정합성 체크 + RAGAS(보조) |
+| CI | GitHub Actions (push/PR마다 pgvector 서비스 컨테이너 띄워 전체 테스트 실행) |
 
 ## 시작하기
 
@@ -165,6 +169,20 @@ curl -X POST http://localhost:8000/ask \
 
 서버 실행 후 `http://localhost:8000/docs`에서 FastAPI 자동 생성 Swagger UI로 직접 테스트할 수 있다.
 
+## Streamlit 채팅 UI
+
+curl 대신 브라우저에서 바로 써보고 싶으면 API 서버를 먼저 띄운 뒤(위 "서버 실행" 참고) Streamlit을 실행한다:
+
+```bash
+streamlit run src/ui/streamlit_app.py
+```
+
+`http://localhost:8501`에서 채팅창, 회사 필터(사이드바), 답변 근거자료(펼치기)를 바로 확인할 수 있다. API가 다른 주소에 떠 있으면 `DART_RAG_API_URL` 환경변수로 지정한다:
+
+```bash
+DART_RAG_API_URL=http://localhost:8000 streamlit run src/ui/streamlit_app.py
+```
+
 ## 프로젝트 구조
 
 ```
@@ -177,10 +195,12 @@ src/
   retrieval/    하이브리드 검색 + 재순위
   generation/   Qwen2.5-3B 답변 생성
   api/          FastAPI 서버
+  ui/           Streamlit 채팅 UI (API 클라이언트)
   evaluation/   평가 지표(Recall@k/MRR, RAGAS 연동)
 scripts/        파이프라인 실행/실험 스크립트
 docs/           설계 문서 + 실험 기록 (아래 참고)
 tests/          pytest (GPU 없이 도는 것 위주)
+.github/workflows/  GitHub Actions CI (push/PR마다 테스트)
 ```
 
 ## 더 읽을거리

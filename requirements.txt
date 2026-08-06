@@ -27,7 +27,7 @@ bitsandbytes==0.50.0
 # API / UI
 fastapi==0.141.1
 uvicorn[standard]==0.52.1
-streamlit==1.40.1
+streamlit==1.61.1
 
 # Evaluation
 ragas==0.4.3
