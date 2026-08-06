@@ -28,6 +28,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "HD건설기계의 당기순이익은 얼마인가요?",
+    "corp_name": "HD건설기계",
+    "expected_chunk_id": 8295,
+    "expected_value": "87,035",
+    "metric": "당기순이익"
+  },
+  {
     "question": "HD한국조선해양의 매출액은 얼마인가요?",
     "corp_name": "HD한국조선해양",
     "expected_chunk_id": 10198,
@@ -56,6 +63,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "HD현대의 당기순이익은 얼마인가요?",
+    "corp_name": "HD현대",
+    "expected_chunk_id": 11931,
+    "expected_value": "3,675,482,625",
+    "metric": "당기순이익"
+  },
+  {
     "question": "HD현대마린솔루션의 매출액은 얼마인가요?",
     "corp_name": "HD현대마린솔루션",
     "expected_chunk_id": 13404,
@@ -68,6 +82,13 @@
     "expected_chunk_id": 13404,
     "expected_value": "350,141,338,776",
     "metric": "영업이익"
+  },
+  {
+    "question": "HD현대마린솔루션의 당기순이익은 얼마인가요?",
+    "corp_name": "HD현대마린솔루션",
+    "expected_chunk_id": 13404,
+    "expected_value": "269,571,288,127",
+    "metric": "당기순이익"
   },
   {
     "question": "HD현대일렉트릭의 매출액은 얼마인가요?",
@@ -84,6 +105,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "HD현대일렉트릭의 당기순이익은 얼마인가요?",
+    "corp_name": "HD현대일렉트릭",
+    "expected_chunk_id": 14568,
+    "expected_value": "731,816,191,305",
+    "metric": "당기순이익"
+  },
+  {
     "question": "HD현대중공업의 매출액은 얼마인가요?",
     "corp_name": "HD현대중공업",
     "expected_chunk_id": 15438,
@@ -96,6 +124,13 @@
     "expected_chunk_id": 15438,
     "expected_value": "2,037,510",
     "metric": "영업이익"
+  },
+  {
+    "question": "HD현대중공업의 당기순이익은 얼마인가요?",
+    "corp_name": "HD현대중공업",
+    "expected_chunk_id": 15438,
+    "expected_value": "1,415,485",
+    "metric": "당기순이익"
   },
   {
     "question": "HMM의 매출액은 얼마인가요?",
@@ -112,6 +147,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "HMM의 당기순이익은 얼마인가요?",
+    "corp_name": "HMM",
+    "expected_chunk_id": 16979,
+    "expected_value": "1,878,732",
+    "metric": "당기순이익"
+  },
+  {
     "question": "KB금융의 매출액은 얼마인가요?",
     "corp_name": "KB금융",
     "expected_chunk_id": 20982,
@@ -126,6 +168,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "KB금융의 당기순이익은 얼마인가요?",
+    "corp_name": "KB금융",
+    "expected_chunk_id": 20982,
+    "expected_value": "7,598",
+    "metric": "당기순이익"
+  },
+  {
     "question": "LG의 매출액은 얼마인가요?",
     "corp_name": "LG",
     "expected_chunk_id": 22512,
@@ -138,6 +187,13 @@
     "expected_chunk_id": 22512,
     "expected_value": "912,174",
     "metric": "영업이익"
+  },
+  {
+    "question": "LG의 당기순이익은 얼마인가요?",
+    "corp_name": "LG",
+    "expected_chunk_id": 22512,
+    "expected_value": "1,000,121",
+    "metric": "당기순이익"
   },
   {
     "question": "LG디스플레이의 매출액은 얼마인가요?",
@@ -182,6 +238,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "LG에너지솔루션의 당기순이익은 얼마인가요?",
+    "corp_name": "LG에너지솔루션",
+    "expected_chunk_id": 26523,
+    "expected_value": "80,803",
+    "metric": "당기순이익"
+  },
+  {
     "question": "LG유플러스의 매출액은 얼마인가요?",
     "corp_name": "LG유플러스",
     "expected_chunk_id": 29022,
@@ -210,6 +273,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "LG이노텍의 당기순이익은 얼마인가요?",
+    "corp_name": "LG이노텍",
+    "expected_chunk_id": 29271,
+    "expected_value": "341,262",
+    "metric": "당기순이익"
+  },
+  {
     "question": "LG전자의 매출액은 얼마인가요?",
     "corp_name": "LG전자",
     "expected_chunk_id": 30591,
@@ -222,6 +292,13 @@
     "expected_chunk_id": 30591,
     "expected_value": "2,478,392",
     "metric": "영업이익"
+  },
+  {
+    "question": "LG전자의 당기순이익은 얼마인가요?",
+    "corp_name": "LG전자",
+    "expected_chunk_id": 30591,
+    "expected_value": "1,220,412",
+    "metric": "당기순이익"
   },
   {
     "question": "LG화학의 매출액은 얼마인가요?",
@@ -238,6 +315,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "LG화학의 당기순이익은 얼마인가요?",
+    "corp_name": "LG화학",
+    "expected_chunk_id": 32163,
+    "expected_value": "-977,063",
+    "metric": "당기순이익"
+  },
+  {
     "question": "LIG디펜스앤에어로스페이스의 매출액은 얼마인가요?",
     "corp_name": "LIG디펜스앤에어로스페이스",
     "expected_chunk_id": 33220,
@@ -250,6 +334,13 @@
     "expected_chunk_id": 33220,
     "expected_value": "319,442",
     "metric": "영업이익"
+  },
+  {
+    "question": "LIG디펜스앤에어로스페이스의 당기순이익은 얼마인가요?",
+    "corp_name": "LIG디펜스앤에어로스페이스",
+    "expected_chunk_id": 33220,
+    "expected_value": "237,480",
+    "metric": "당기순이익"
   },
   {
     "question": "LS의 매출액은 얼마인가요?",
@@ -308,6 +399,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "SK의 당기순이익은 얼마인가요?",
+    "corp_name": "SK",
+    "expected_chunk_id": 45383,
+    "expected_value": "3,555,246",
+    "metric": "당기순이익"
+  },
+  {
     "question": "SK스퀘어의 매출액은 얼마인가요?",
     "corp_name": "SK스퀘어",
     "expected_chunk_id": 48732,
@@ -320,6 +418,13 @@
     "expected_chunk_id": 48732,
     "expected_value": "8,797,421",
     "metric": "영업이익"
+  },
+  {
+    "question": "SK스퀘어의 당기순이익은 얼마인가요?",
+    "corp_name": "SK스퀘어",
+    "expected_chunk_id": 48732,
+    "expected_value": "8,818,695",
+    "metric": "당기순이익"
   },
   {
     "question": "SK이노베이션의 매출액은 얼마인가요?",
@@ -336,6 +441,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "SK이노베이션의 당기순이익은 얼마인가요?",
+    "corp_name": "SK이노베이션",
+    "expected_chunk_id": 50094,
+    "expected_value": "(5,436,441)",
+    "metric": "당기순이익"
+  },
+  {
     "question": "SK텔레콤의 매출액은 얼마인가요?",
     "corp_name": "SK텔레콤",
     "expected_chunk_id": 52941,
@@ -348,6 +460,13 @@
     "expected_chunk_id": 52941,
     "expected_value": "1,073,215",
     "metric": "영업이익"
+  },
+  {
+    "question": "SK텔레콤의 당기순이익은 얼마인가요?",
+    "corp_name": "SK텔레콤",
+    "expected_chunk_id": 52941,
+    "expected_value": "375,084",
+    "metric": "당기순이익"
   },
   {
     "question": "SK하이닉스의 매출액은 얼마인가요?",
@@ -378,6 +497,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "고려아연의 당기순이익은 얼마인가요?",
+    "corp_name": "고려아연",
+    "expected_chunk_id": 55966,
+    "expected_value": "770,249",
+    "metric": "당기순이익"
+  },
+  {
     "question": "기아의 매출액은 얼마인가요?",
     "corp_name": "기아",
     "expected_chunk_id": 56943,
@@ -390,6 +516,13 @@
     "expected_chunk_id": 56943,
     "expected_value": "9,078,148",
     "metric": "영업이익"
+  },
+  {
+    "question": "기아의 당기순이익은 얼마인가요?",
+    "corp_name": "기아",
+    "expected_chunk_id": 56943,
+    "expected_value": "7,554,174",
+    "metric": "당기순이익"
   },
   {
     "question": "대덕전자의 매출액은 얼마인가요?",
@@ -406,6 +539,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "대덕전자의 당기순이익은 얼마인가요?",
+    "corp_name": "대덕전자",
+    "expected_chunk_id": 61356,
+    "expected_value": "47,605,327,690",
+    "metric": "당기순이익"
+  },
+  {
     "question": "대우건설의 매출액은 얼마인가요?",
     "corp_name": "대우건설",
     "expected_chunk_id": 62373,
@@ -418,6 +558,13 @@
     "expected_chunk_id": 62373,
     "expected_value": "(815,431,279,791)",
     "metric": "영업이익"
+  },
+  {
+    "question": "대우건설의 당기순이익은 얼마인가요?",
+    "corp_name": "대우건설",
+    "expected_chunk_id": 62373,
+    "expected_value": "(916,079,534,292)",
+    "metric": "당기순이익"
   },
   {
     "question": "대한전선의 매출액은 얼마인가요?",
@@ -448,6 +595,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "대한항공의 당기순이익은 얼마인가요?",
+    "corp_name": "대한항공",
+    "expected_chunk_id": 65616,
+    "expected_value": "647,273",
+    "metric": "당기순이익"
+  },
+  {
     "question": "두산의 매출액은 얼마인가요?",
     "corp_name": "두산",
     "expected_chunk_id": 67317,
@@ -460,6 +614,13 @@
     "expected_chunk_id": 67317,
     "expected_value": "1,062,715",
     "metric": "영업이익"
+  },
+  {
+    "question": "두산의 당기순이익은 얼마인가요?",
+    "corp_name": "두산",
+    "expected_chunk_id": 67317,
+    "expected_value": "249,511",
+    "metric": "당기순이익"
   },
   {
     "question": "두산밥캣의 매출액은 얼마인가요?",
@@ -518,6 +679,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "삼성E&A의 당기순이익은 얼마인가요?",
+    "corp_name": "삼성E&A",
+    "expected_chunk_id": 75212,
+    "expected_value": "648,307,939,623",
+    "metric": "당기순이익"
+  },
+  {
     "question": "삼성SDI의 매출액은 얼마인가요?",
     "corp_name": "삼성SDI",
     "expected_chunk_id": 77951,
@@ -544,6 +712,13 @@
     "expected_chunk_id": 78271,
     "expected_value": "548,415",
     "metric": "영업이익"
+  },
+  {
+    "question": "삼성물산의 당기순이익은 얼마인가요?",
+    "corp_name": "삼성물산",
+    "expected_chunk_id": 78271,
+    "expected_value": "1,064,745",
+    "metric": "당기순이익"
   },
   {
     "question": "삼성바이오로직스의 매출액은 얼마인가요?",
@@ -588,6 +763,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "삼성에피스홀딩스의 당기순이익은 얼마인가요?",
+    "corp_name": "삼성에피스홀딩스",
+    "expected_chunk_id": 84266,
+    "expected_value": "(31,383)",
+    "metric": "당기순이익"
+  },
+  {
     "question": "삼성전기의 매출액은 얼마인가요?",
     "corp_name": "삼성전기",
     "expected_chunk_id": 85034,
@@ -600,6 +782,13 @@
     "expected_chunk_id": 85034,
     "expected_value": "913,331,178,557",
     "metric": "영업이익"
+  },
+  {
+    "question": "삼성전기의 당기순이익은 얼마인가요?",
+    "corp_name": "삼성전기",
+    "expected_chunk_id": 85034,
+    "expected_value": "730,989,517,218",
+    "metric": "당기순이익"
   },
   {
     "question": "삼성전자의 매출액은 얼마인가요?",
@@ -628,6 +817,13 @@
     "expected_chunk_id": 88026,
     "expected_value": "862,211",
     "metric": "영업이익"
+  },
+  {
+    "question": "삼성중공업의 당기순이익은 얼마인가요?",
+    "corp_name": "삼성중공업",
+    "expected_chunk_id": 88026,
+    "expected_value": "535,754",
+    "metric": "당기순이익"
   },
   {
     "question": "삼양식품의 매출액은 얼마인가요?",
@@ -700,6 +896,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "에이피알의 당기순이익은 얼마인가요?",
+    "corp_name": "에이피알",
+    "expected_chunk_id": 103744,
+    "expected_value": "289,654,813,287",
+    "metric": "당기순이익"
+  },
+  {
     "question": "엘에스일렉트릭의 매출액은 얼마인가요?",
     "corp_name": "엘에스일렉트릭",
     "expected_chunk_id": 105075,
@@ -726,6 +929,13 @@
     "expected_chunk_id": 106415,
     "expected_value": "558,258",
     "metric": "영업이익"
+  },
+  {
+    "question": "오리온의 당기순이익은 얼마인가요?",
+    "corp_name": "오리온",
+    "expected_chunk_id": 106415,
+    "expected_value": "390,598",
+    "metric": "당기순이익"
   },
   {
     "question": "유한양행의 매출액은 얼마인가요?",
@@ -756,6 +966,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "이수페타시스의 당기순이익은 얼마인가요?",
+    "corp_name": "이수페타시스",
+    "expected_chunk_id": 111931,
+    "expected_value": "160,483",
+    "metric": "당기순이익"
+  },
+  {
     "question": "케이티앤지의 매출액은 얼마인가요?",
     "corp_name": "케이티앤지",
     "expected_chunk_id": 119339,
@@ -768,6 +985,13 @@
     "expected_chunk_id": 119339,
     "expected_value": "1,343,666",
     "metric": "영업이익"
+  },
+  {
+    "question": "케이티앤지의 당기순이익은 얼마인가요?",
+    "corp_name": "케이티앤지",
+    "expected_chunk_id": 119339,
+    "expected_value": "1,102,316",
+    "metric": "당기순이익"
   },
   {
     "question": "코웨이의 매출액은 얼마인가요?",
@@ -784,6 +1008,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "코웨이의 당기순이익은 얼마인가요?",
+    "corp_name": "코웨이",
+    "expected_chunk_id": 120926,
+    "expected_value": "617,510",
+    "metric": "당기순이익"
+  },
+  {
     "question": "포스코인터내셔널의 매출액은 얼마인가요?",
     "corp_name": "포스코인터내셔널",
     "expected_chunk_id": 125855,
@@ -796,6 +1027,13 @@
     "expected_chunk_id": 125855,
     "expected_value": "1,165,316",
     "metric": "영업이익"
+  },
+  {
+    "question": "포스코인터내셔널의 당기순이익은 얼마인가요?",
+    "corp_name": "포스코인터내셔널",
+    "expected_chunk_id": 125855,
+    "expected_value": "636,802",
+    "metric": "당기순이익"
   },
   {
     "question": "포스코퓨처엠의 매출액은 얼마인가요?",
@@ -854,6 +1092,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "한국타이어앤테크놀로지의 당기순이익은 얼마인가요?",
+    "corp_name": "한국타이어앤테크놀로지",
+    "expected_chunk_id": 135989,
+    "expected_value": "971,594,538,868",
+    "metric": "당기순이익"
+  },
+  {
     "question": "한국항공우주의 매출액은 얼마인가요?",
     "corp_name": "한국항공우주",
     "expected_chunk_id": 137585,
@@ -868,6 +1113,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "한국항공우주의 당기순이익은 얼마인가요?",
+    "corp_name": "한국항공우주",
+    "expected_chunk_id": 137585,
+    "expected_value": "187,312,615,904",
+    "metric": "당기순이익"
+  },
+  {
     "question": "한미반도체의 매출액은 얼마인가요?",
     "corp_name": "한미반도체",
     "expected_chunk_id": 138836,
@@ -880,6 +1132,13 @@
     "expected_chunk_id": 138836,
     "expected_value": "251,390",
     "metric": "영업이익"
+  },
+  {
+    "question": "한미반도체의 당기순이익은 얼마인가요?",
+    "corp_name": "한미반도체",
+    "expected_chunk_id": 138836,
+    "expected_value": "214,008",
+    "metric": "당기순이익"
   },
   {
     "question": "한미약품의 매출액은 얼마인가요?",
@@ -924,6 +1183,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "한화의 당기순이익은 얼마인가요?",
+    "corp_name": "한화",
+    "expected_chunk_id": 142435,
+    "expected_value": "1,064,844",
+    "metric": "당기순이익"
+  },
+  {
     "question": "한화솔루션의 매출액은 얼마인가요?",
     "corp_name": "한화솔루션",
     "expected_chunk_id": 145231,
@@ -950,6 +1216,13 @@
     "expected_chunk_id": 146839,
     "expected_value": "119,899",
     "metric": "영업이익"
+  },
+  {
+    "question": "한화시스템의 당기순이익은 얼마인가요?",
+    "corp_name": "한화시스템",
+    "expected_chunk_id": 146839,
+    "expected_value": "209,145",
+    "metric": "당기순이익"
   },
   {
     "question": "한화에어로스페이스의 매출액은 얼마인가요?",
@@ -980,6 +1253,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "한화오션의 당기순이익은 얼마인가요?",
+    "corp_name": "한화오션",
+    "expected_chunk_id": 149972,
+    "expected_value": "1,245,922",
+    "metric": "당기순이익"
+  },
+  {
     "question": "현대건설의 매출액은 얼마인가요?",
     "corp_name": "현대건설",
     "expected_chunk_id": 151510,
@@ -994,6 +1274,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "현대건설의 당기순이익은 얼마인가요?",
+    "corp_name": "현대건설",
+    "expected_chunk_id": 151510,
+    "expected_value": "559,068",
+    "metric": "당기순이익"
+  },
+  {
     "question": "현대글로비스의 매출액은 얼마인가요?",
     "corp_name": "현대글로비스",
     "expected_chunk_id": 153299,
@@ -1006,6 +1293,13 @@
     "expected_chunk_id": 153299,
     "expected_value": "2,073,007,545,910",
     "metric": "영업이익"
+  },
+  {
+    "question": "현대글로비스의 당기순이익은 얼마인가요?",
+    "corp_name": "현대글로비스",
+    "expected_chunk_id": 153299,
+    "expected_value": "1,734,697,253,045",
+    "metric": "당기순이익"
   },
   {
     "question": "현대로템의 매출액은 얼마인가요?",
@@ -1036,6 +1330,13 @@
     "metric": "영업이익"
   },
   {
+    "question": "현대모비스의 당기순이익은 얼마인가요?",
+    "corp_name": "현대모비스",
+    "expected_chunk_id": 155881,
+    "expected_value": "3,664,736",
+    "metric": "당기순이익"
+  },
+  {
     "question": "현대오토에버의 매출액은 얼마인가요?",
     "corp_name": "현대오토에버",
     "expected_chunk_id": 157264,
@@ -1048,6 +1349,13 @@
     "expected_chunk_id": 157264,
     "expected_value": "255,302",
     "metric": "영업이익"
+  },
+  {
+    "question": "현대오토에버의 당기순이익은 얼마인가요?",
+    "corp_name": "현대오토에버",
+    "expected_chunk_id": 157264,
+    "expected_value": "186,789",
+    "metric": "당기순이익"
   },
   {
     "question": "현대자동차의 매출액은 얼마인가요?",
@@ -1076,5 +1384,12 @@
     "expected_chunk_id": 159787,
     "expected_value": "442,378,347,179",
     "metric": "영업이익"
+  },
+  {
+    "question": "효성중공업의 당기순이익은 얼마인가요?",
+    "corp_name": "효성중공업",
+    "expected_chunk_id": 159787,
+    "expected_value": "274,511,327,303",
+    "metric": "당기순이익"
   }
 ]

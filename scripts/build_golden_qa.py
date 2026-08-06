@@ -1,7 +1,7 @@
 """검색/평가용 골드셋을 실제 DB에서 자동 구축한다.
 
-기업별 손익계산서류 청크에서 "매출액"/"영업이익" 행을 정규식으로 찾아
-값을 추출하고, 그 청크를 정답(ground truth)으로 하는 질문-정답 쌍을
+기업별 손익계산서류 청크에서 "매출액"/"영업이익"/"당기순이익" 행을 정규식으로
+찾아 값을 추출하고, 그 청크를 정답(ground truth)으로 하는 질문-정답 쌍을
 data/eval/golden_qa.json에 저장한다. GPU 불필요 - SQL과 정규식만 쓴다.
 """
 
@@ -82,29 +82,49 @@ def main() -> None:
             for chunk_id, chunk_text in rows:
                 revenue = _extract_value(chunk_text, "매출액", allow_negative=False)
                 op_income = _extract_value(chunk_text, "영업이익", allow_negative=True)
-                if revenue and op_income:
+                if not (revenue and op_income):
+                    continue
+
+                items.append(
+                    {
+                        "question": f"{corp_name}의 매출액은 얼마인가요?",
+                        "corp_name": corp_name,
+                        "expected_chunk_id": chunk_id,
+                        "expected_value": revenue,
+                        "metric": "매출액",
+                    }
+                )
+                items.append(
+                    {
+                        "question": f"{corp_name}의 영업이익은 얼마인가요?",
+                        "corp_name": corp_name,
+                        "expected_chunk_id": chunk_id,
+                        "expected_value": op_income,
+                        "metric": "영업이익",
+                    }
+                )
+                # 당기순이익은 같은 표에 없는 경우도 있어서(별도 표로 분리된 회사 존재)
+                # 있으면 추가하고 없으면 그냥 넘어간다 - 매출액/영업이익 커버리지는 안 줄인다.
+                net_income = _extract_value(chunk_text, "당기순이익", allow_negative=True)
+                if net_income:
                     items.append(
                         {
-                            "question": f"{corp_name}의 매출액은 얼마인가요?",
+                            "question": f"{corp_name}의 당기순이익은 얼마인가요?",
                             "corp_name": corp_name,
                             "expected_chunk_id": chunk_id,
-                            "expected_value": revenue,
-                            "metric": "매출액",
+                            "expected_value": net_income,
+                            "metric": "당기순이익",
                         }
                     )
-                    items.append(
-                        {
-                            "question": f"{corp_name}의 영업이익은 얼마인가요?",
-                            "corp_name": corp_name,
-                            "expected_chunk_id": chunk_id,
-                            "expected_value": op_income,
-                            "metric": "영업이익",
-                        }
-                    )
-                    break  # 회사당 첫 번째로 매칭되는 손익계산서류 청크 하나만 사용
+                break  # 회사당 첫 번째로 매칭되는 손익계산서류 청크 하나만 사용
 
     OUTPUT.write_text(json.dumps(items, ensure_ascii=False, indent=2))
-    print(f"골드셋 {len(items)}개 문항 생성 ({len(items)//2}개 기업) -> {OUTPUT}")
+    n_companies = len({it["corp_name"] for it in items})
+    n_net_income = sum(1 for it in items if it["metric"] == "당기순이익")
+    print(
+        f"골드셋 {len(items)}개 문항 생성 ({n_companies}개 기업, "
+        f"당기순이익 {n_net_income}건 포함) -> {OUTPUT}"
+    )
 
 
 if __name__ == "__main__":

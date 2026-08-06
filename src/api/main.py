@@ -8,23 +8,36 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.concurrency import run_in_threadpool
-from pydantic import BaseModel
+from pydantic import BaseModel, Field, field_validator
 
 from src.generation.generator import Generator
 from src.retrieval.retriever import Retriever
 
+# docs/experiments.md 실험 6: top_k가 15~20을 넘어가면 문맥 과부하로 정확도가
+# 오히려 떨어지는 게 실측으로 확인됐다 - 그 범위를 벗어나는 값을 애초에 막는다.
+_MAX_TOP_K = 20
+_MAX_HISTORY_TURNS = 20  # 무제한 이력 전달로 인한 과도한 프롬프트 길이/자원 낭비 방지
+
 
 class HistoryTurn(BaseModel):
-    question: str
-    answer: str
+    question: str = Field(..., min_length=1, max_length=500)
+    answer: str = Field(..., min_length=1, max_length=4000)
     corp_name: str | None = None
 
 
 class AskRequest(BaseModel):
-    question: str
-    top_k: int = 5
+    question: str = Field(..., min_length=1, max_length=500)
+    top_k: int = Field(default=5, ge=1, le=_MAX_TOP_K)
     corp_name: str | None = None
-    history: list[HistoryTurn] = []
+    history: list[HistoryTurn] = Field(default_factory=list, max_length=_MAX_HISTORY_TURNS)
+
+    @field_validator("question")
+    @classmethod
+    def _question_not_blank(cls, v: str) -> str:
+        v = v.strip()
+        if not v:
+            raise ValueError("question은 공백만으로 채울 수 없습니다")
+        return v
 
 
 class Source(BaseModel):

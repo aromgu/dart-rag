@@ -1,6 +1,9 @@
 import asyncio
 from unittest.mock import MagicMock
 
+import pytest
+from pydantic import ValidationError
+
 from src.api.main import AskRequest, HistoryTurn, app, ask, health
 
 
@@ -68,3 +71,28 @@ def test_ask_carries_forward_corp_name_and_history_when_followup_omits_it():
         [],
         history=[{"question": "삼성전자의 매출액은 얼마인가요?", "answer": "333,605,938입니다."}],
     )
+
+
+def test_ask_request_rejects_blank_question():
+    with pytest.raises(ValidationError):
+        AskRequest(question="   ")
+
+
+def test_ask_request_rejects_empty_question():
+    with pytest.raises(ValidationError):
+        AskRequest(question="")
+
+
+@pytest.mark.parametrize("top_k", [0, -1, 21, 100])
+def test_ask_request_rejects_top_k_out_of_range(top_k):
+    with pytest.raises(ValidationError):
+        AskRequest(question="매출액은?", top_k=top_k)
+
+
+def test_ask_request_accepts_top_k_boundaries():
+    assert AskRequest(question="매출액은?", top_k=1).top_k == 1
+    assert AskRequest(question="매출액은?", top_k=20).top_k == 20
+
+
+def test_ask_request_strips_whitespace_from_question():
+    assert AskRequest(question="  매출액은?  ").question == "매출액은?"

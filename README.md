@@ -1,6 +1,7 @@
 # dart-rag
 
 [![Tests](https://github.com/aromgu/dart-rag/actions/workflows/test.yml/badge.svg)](https://github.com/aromgu/dart-rag/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 한국 DART(전자공시시스템) 사업보고서를 근거로 재무 질문에 답하는 RAG(Retrieval-Augmented Generation) 시스템. KOSPI 시가총액 상위 100개 기업의 최신 사업보고서 99건, 156,707개 청크를 대상으로 한다.
 
@@ -14,29 +15,15 @@ DART 공시는 PDF/XML로 흩어져 있고 표가 많아서 원하는 숫자 하
 
 ## 파이프라인
 
-```
-DART Open API
-    │  수집(ingestion) — 기업당 최신 사업보고서 1건
-    ▼
-XML 원문 (malformed markup 정제)
-    │  파싱(parsing) — SECTION/TABLE 구조 보존, 표는 행 단위로 직렬화
-    ▼
-구조화된 블록 (문단/표)
-    │  청킹(chunking) — 섹션 경계 기준, 표는 헤더 반복 분할
-    ▼
-청크 156,707개
-    │  임베딩(embedding) — BAAI/bge-m3 dense(1024d) + sparse 동시 추출
-    ▼
-PostgreSQL + pgvector (HNSW 인덱스)
-    │  검색(retrieval) — dense+sparse 가중합 융합 → cross-encoder 재순위
-    ▼
-상위 근거 청크
-    │  생성(generation) — Qwen2.5-3B-Instruct, 근거 기반 프롬프트
-    ▼
-답변 + 출처
-    │  API — FastAPI, 무상태 멀티턴
-    ▼
-클라이언트
+```mermaid
+flowchart TD
+    A["DART Open API"] -->|"수집(ingestion)<br/>기업당 최신 사업보고서 1건"| B["XML 원문<br/>(malformed markup 정제)"]
+    B -->|"파싱(parsing)<br/>SECTION/TABLE 구조 보존"| C["구조화된 블록<br/>(문단/표)"]
+    C -->|"청킹(chunking)<br/>섹션 경계 기준, 표는 헤더 반복 분할"| D["청크 156,707개"]
+    D -->|"임베딩(embedding)<br/>bge-m3 dense(1024d) + sparse"| E[("PostgreSQL + pgvector<br/>HNSW 인덱스")]
+    E -->|"검색(retrieval)<br/>dense+sparse 가중합 → cross-encoder 재순위"| F["상위 근거 청크"]
+    F -->|"생성(generation)<br/>Qwen2.5-3B-Instruct"| G["답변 + 출처"]
+    G -->|"API(FastAPI, 무상태 멀티턴)"| H(["클라이언트<br/>(curl / Streamlit)"])
 ```
 
 ## 기술적으로 눈여겨볼 점
@@ -216,3 +203,7 @@ tests/          pytest (GPU 없이 도는 것 위주)
 | [docs/api_strategy.md](docs/api_strategy.md) | API/멀티턴/비동기 설계 |
 | [docs/experiments.md](docs/experiments.md) | 11개 비교실험 전체 기록 |
 | [docs/study.md](docs/study.md) | 파싱/청킹/임베딩/검색/평가 기법 공부 노트 |
+
+## 라이선스
+
+[MIT](LICENSE)
