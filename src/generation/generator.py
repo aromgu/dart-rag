@@ -37,14 +37,105 @@ SYSTEM_PROMPT = (
     "한글 숫자(억/만 등)로 바꿔 쓰지 마세요."
 )
 
+# docs/experiments.md 실험 4/11/13에서 확인한 실패 유형 두 가지를 직접
+# 겨냥한 2-shot 예시:
+# 1) 문맥에 정답이 있어도 다른 연도/다른 계정과목 값을 잘못 고름
+# 2) 연결/별도재무제표가 둘 다 후보로 있을 때 별도 쪽을 잘못 고름
+#    (실험 13에서 실측 확인 - 표를 읽기 쉽게 재포맷했더니 두 표의 구조가
+#    비슷해 보여서 오히려 연결/별도 구분이 더 어려워지는 부작용이 있었음)
+FEWSHOT_MESSAGES = [
+    {
+        "role": "user",
+        "content": (
+            "참고자료:\n[1] (테스트기업 / III. 재무에 관한 사항 > 2. 연결재무제표)\n"
+            "과목 | 제10기(당기) | 제9기(전기)\n매출액 | 500,000 | 450,000\n영업이익 | 50,000 | 40,000\n"
+            "당기순이익 | 30,000 | 25,000\n\n질문: 테스트기업의 영업이익은 얼마인가요?"
+        ),
+    },
+    {"role": "assistant", "content": "50,000입니다."},
+    {
+        "role": "user",
+        "content": (
+            "참고자료:\n[1] (테스트기업 [연결기준] / III. 재무에 관한 사항 > 2. 연결재무제표)\n"
+            "매출액: 제10기=800,000, 제9기=750,000\n\n"
+            "[2] (테스트기업 [별도기준] / III. 재무에 관한 사항 > 4. 재무제표)\n"
+            "매출액: 제10기=650,000, 제9기=600,000\n\n질문: 테스트기업의 매출액은 얼마인가요?"
+        ),
+    },
+    {"role": "assistant", "content": "800,000입니다. (연결재무제표 기준)"},
+]
+
+
+def _reformat_table_text(text: str) -> str:
+    """원시 파이프 표(원본 저장 형식)를 "행이름: 열이름=값, ..." 형태로 바꿔서
+    어느 열(기간/구분)의 값인지 모델이 표를 직접 파싱하지 않아도 알아보게 한다.
+
+    DART 표는 "기수"와 "날짜"가 별도 행으로 나뉘어 있는 경우가 흔해서(예: "제57기"
+    행 다음에 빈 첫 셀로 시작하는 "2025년 12월말" 행), 첫 셀이 비어있고 열 개수가
+    같은 연속 행은 헤더의 연장으로 보고 합친다. 열 개수가 안 맞거나 행 이름이
+    기간처럼 보이는(날짜/기수 패턴) 애매한 경우는 잘못 재구성하는 것보다 원문을
+    그대로 두는 게 안전해서 건드리지 않는다.
+    """
+    lines = text.split("\n")
+    table_lines = [(i, line) for i, line in enumerate(lines) if "|" in line]
+    if len(table_lines) < 2:
+        return text
+
+    prefix = "\n".join(lines[: table_lines[0][0]])
+    rows = [[c.strip() for c in line.split("|")] for _, line in table_lines]
+
+    header = rows[0]
+    consumed = 1
+    for row in rows[1:]:
+        if row and row[0] == "" and len(row) == len(header):
+            header = [f"{h} {c}".strip() for h, c in zip(header, row)]
+            consumed += 1
+        else:
+            break
+
+    out = [prefix] if prefix.strip() else []
+    for row in rows[consumed:]:
+        if not row or not row[0] or _LOOKS_LIKE_PERIOD.search(row[0]):
+            out.append(" | ".join(row))
+            continue
+        pairs = [f"{h}={v}" for h, v in zip(header[1:], row[1:]) if h and v]
+        out.append(f"{row[0]}: {', '.join(pairs)}" if pairs else " | ".join(row))
+    return "\n".join(out)
+
+
+_LOOKS_LIKE_PERIOD = re.compile(r"\d{4}\s*년|제\s*\d+\s*\(?기")
+_STATEMENT_KEYWORDS = ("재무제표", "재무상태표", "손익계산서")
+
+
+def _statement_basis_label(section_path: list[str]) -> str | None:
+    """section_path에서 연결/별도재무제표 여부를 뽑아낸다.
+
+    DART 관행상 "연결"이 안 붙은 "재무제표"/"재무상태표" 절은 별도(개별)
+    재무제표를 뜻하는데, 이 관례를 3B 모델이 항상 아는 건 아니라서(실측으로
+    확인 - docs/experiments.md 실험 13) breadcrumb에 명시적으로 태그를 붙인다.
+    """
+    joined = re.sub(r"\s+", "", "".join(section_path))
+    if "연결" in joined:
+        return "연결"
+    if any(k in joined for k in _STATEMENT_KEYWORDS):
+        return "별도"
+    return None
+
 
 def _build_context(chunks: list[dict]) -> str:
     parts = []
     for i, chunk in enumerate(chunks, 1):
+        section_path = chunk.get("section_path") or []
         breadcrumb = chunk["corp_name"]
-        if chunk.get("section_path"):
-            breadcrumb += " / " + " > ".join(chunk["section_path"])
-        parts.append(f"[{i}] ({breadcrumb})\n{chunk['text']}")
+        basis = _statement_basis_label(section_path)
+        if basis:
+            breadcrumb += f" [{basis}기준]"
+        if section_path:
+            breadcrumb += " / " + " > ".join(section_path)
+        text = chunk["text"]
+        if chunk.get("chunk_type") == "table":
+            text = _reformat_table_text(text)
+        parts.append(f"[{i}] ({breadcrumb})\n{text}")
     return "\n\n".join(parts)
 
 
@@ -96,7 +187,7 @@ class Generator:
         메시지에 넣고, 근거자료는 현재 턴에만 붙인다(과거 턴에 다시 넣지 않음).
         """
         context = _build_context(chunks)
-        messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+        messages = [{"role": "system", "content": SYSTEM_PROMPT}, *FEWSHOT_MESSAGES]
         for turn in history or []:
             messages.append({"role": "user", "content": turn["question"]})
             messages.append({"role": "assistant", "content": turn["answer"]})
