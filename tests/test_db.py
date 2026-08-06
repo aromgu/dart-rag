@@ -14,9 +14,11 @@ def _random_vector(seed: int) -> list[float]:
 
 
 def test_insert_and_query_company_disclosure_chunk(db_session):
-    company = Company(corp_code="00126380", corp_name="삼성전자", stock_code="005930")
+    # corp_code/rcept_no는 실제 적재된 운영 데이터와 겹치지 않는 가짜 값을 쓴다 -
+    # dev DB에 실제 99개 기업 데이터가 이미 들어있어서 진짜 코드를 쓰면 PK 충돌난다.
+    company = Company(corp_code="00000001", corp_name="테스트회사", stock_code="000001")
     disclosure = Disclosure(
-        rcept_no="20250311001085",
+        rcept_no="99999999999999",
         corp_code=company.corp_code,
         report_nm="사업보고서 (2024.12)",
         rcept_dt=datetime.date(2025, 3, 11),
@@ -33,17 +35,17 @@ def test_insert_and_query_company_disclosure_chunk(db_session):
     db_session.add_all([company, disclosure, chunk])
     db_session.commit()
 
-    fetched = db_session.scalar(select(Chunk).where(Chunk.rcept_no == "20250311001085"))
+    fetched = db_session.scalar(select(Chunk).where(Chunk.rcept_no == "99999999999999"))
     assert fetched.text == "매출액 | 1,748,877 | 1,699,923"
     assert fetched.section_path == ["III. 재무에 관한 사항", "2. 연결재무제표"]
-    assert fetched.disclosure.corp_code == "00126380"
-    assert fetched.disclosure.company.corp_name == "삼성전자"
+    assert fetched.disclosure.corp_code == "00000001"
+    assert fetched.disclosure.company.corp_name == "테스트회사"
 
 
 def test_vector_cosine_similarity_search_orders_closest_first(db_session):
-    company = Company(corp_code="00126380", corp_name="삼성전자", stock_code="005930")
+    company = Company(corp_code="00000001", corp_name="테스트회사", stock_code="000001")
     disclosure = Disclosure(
-        rcept_no="20250311001085",
+        rcept_no="99999999999999",
         corp_code=company.corp_code,
         report_nm="사업보고서 (2024.12)",
         rcept_dt=datetime.date(2025, 3, 11),
@@ -64,5 +66,12 @@ def test_vector_cosine_similarity_search_orders_closest_first(db_session):
     db_session.add_all([near_chunk, far_chunk])
     db_session.commit()
 
-    results = db_session.scalars(select(Chunk).order_by(Chunk.embedding.cosine_distance(query_vector))).all()
+    # rcept_no로 이 테스트가 만든 두 행만 좁혀서 비교한다 - dev DB에는 이미
+    # 실제 15만 개 청크가 들어있어서 전체 테이블 기준으로 비교하면 그 데이터가
+    # near/far보다 query_vector에 더 가까울 수 있어 순서 비교가 무의미해진다.
+    results = db_session.scalars(
+        select(Chunk)
+        .where(Chunk.rcept_no == disclosure.rcept_no)
+        .order_by(Chunk.embedding.cosine_distance(query_vector))
+    ).all()
     assert [r.text for r in results] == ["near", "far"]

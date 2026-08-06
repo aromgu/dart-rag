@@ -10,7 +10,7 @@ import datetime
 
 from pgvector.sqlalchemy import Vector
 from sqlalchemy import Date, ForeignKey, Integer, String, Text, UniqueConstraint
-from sqlalchemy.dialects.postgresql import ARRAY
+from sqlalchemy.dialects.postgresql import ARRAY, JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from src.db.base import Base
@@ -57,5 +57,11 @@ class Chunk(Base):
     chunk_index: Mapped[int] = mapped_column(Integer, nullable=False)
     text: Mapped[str] = mapped_column(Text, nullable=False)
     embedding: Mapped[list[float] | None] = mapped_column(Vector(EMBEDDING_DIM), nullable=True)
+    # bge-m3 sparse(lexical weight) 출력. {토큰ID(문자열): 가중치} 형태 - BM25가 아니라
+    # 모델이 학습으로 예측하는 SPLADE류 키워드 가중치. dense와 같은 forward pass에서
+    # 같이 나오므로 지금 같이 저장해두면 나중에 하이브리드 검색 비교 실험 때 15만 개
+    # 청크를 GPU로 다시 인코딩할 필요가 없다. pgvector 0.6.0은 sparsevec을 지원하지
+    # 않아 JSONB로 저장하고, 하이브리드 스코어링 로직은 검색(retrieval) 단계에서 구현한다.
+    sparse_embedding: Mapped[dict | None] = mapped_column(JSONB, nullable=True)
 
     disclosure: Mapped["Disclosure"] = relationship(back_populates="chunks")

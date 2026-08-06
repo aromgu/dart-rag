@@ -1,10 +1,13 @@
 """docs/embedding_strategy.md의 설계를 구현한다.
 
 chunk_blocks()가 만든 청크 리스트를 받아 breadcrumb(회사명 + 섹션 경로)를 붙여서
-BAAI/bge-m3로 인코딩한다. 저장/중복방지는 db 레이어 책임이라 여기서는 다루지 않는다.
+BAAI/bge-m3로 인코딩한다. dense(1024차원)와 sparse(lexical weight)를 같은 forward
+pass에서 같이 뽑는다 - 나중에 하이브리드 검색을 비교 실험할 때 청크를 GPU로 다시
+인코딩하지 않아도 되게 하기 위함(docs/study.md "임베딩과 DB의 관계" 참고).
+저장/중복방지는 db 레이어 책임이라 여기서는 다루지 않는다.
 """
 
-from sentence_transformers import SentenceTransformer
+from FlagEmbedding import BGEM3FlagModel
 
 from src.config import settings
 
@@ -31,15 +34,38 @@ def _build_input(chunk: dict, corp_name: str) -> str:
 
 class Embedder:
     def __init__(self, model_name: str | None = None):
-        self.model = SentenceTransformer(model_name or settings.embedding_model)
+        self.model = BGEM3FlagModel(model_name or settings.embedding_model, use_fp16=True)
 
-    def embed_chunks(self, chunks: list[dict], corp_name: str, batch_size: int = 32) -> list[list[float]]:
-        """청크 리스트를 청크와 같은 순서의 1024차원 벡터 리스트로 변환한다."""
+    def embed_chunks(
+        self, chunks: list[dict], corp_name: str, batch_size: int = 32
+    ) -> tuple[list[list[float]], list[dict[str, float]]]:
+        """청크 리스트를 (dense 벡터 리스트, sparse 가중치 딕셔너리 리스트)로 변환한다.
+
+        둘 다 청크와 같은 순서를 유지한다. sparse는 {토큰ID(문자열): 가중치} 형태로,
+        JSONB 컬럼에 바로 저장 가능하도록 float로 캐스팅한다(원본은 numpy.float16이라
+        JSON 직렬화가 안 됨).
+        """
         inputs = [_build_input(chunk, corp_name) for chunk in chunks]
-        embeddings = self.model.encode(
+        output = self.model.encode(
             inputs,
             batch_size=batch_size,
-            normalize_embeddings=True,
-            show_progress_bar=False,
+            return_dense=True,
+            return_sparse=True,
+            return_colbert_vecs=False,
         )
-        return embeddings.tolist()
+        dense = output["dense_vecs"].tolist()
+        sparse = [{token: float(weight) for token, weight in lw.items()} for lw in output["lexical_weights"]]
+        return dense, sparse
+
+    def embed_query(self, query: str) -> tuple[list[float], dict[str, float]]:
+        """검색 질문 하나를 (dense 벡터, sparse 가중치 딕셔너리)로 변환한다.
+
+        청크와 달리 회사명/섹션 breadcrumb를 붙이지 않는다 - 질문은 이미 그
+        자체로 자연어 텍스트라 breadcrumb로 보강할 문맥이 없다.
+        """
+        output = self.model.encode(
+            [query[:MAX_INPUT_CHARS]], return_dense=True, return_sparse=True, return_colbert_vecs=False
+        )
+        dense = output["dense_vecs"][0].tolist()
+        sparse = {token: float(weight) for token, weight in output["lexical_weights"][0].items()}
+        return dense, sparse

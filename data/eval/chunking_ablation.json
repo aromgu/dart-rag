@@ -1,0 +1,17 @@
+{
+  "600": {
+    "value_recall@5": 0.7,
+    "total_chunks": 24422,
+    "n": 30
+  },
+  "900 (기본값)": {
+    "value_recall@5": 0.7,
+    "total_chunks": 22276,
+    "n": 30
+  },
+  "1200": {
+    "value_recall@5": 0.7,
+    "total_chunks": 21331,
+    "n": 30
+  }
+}

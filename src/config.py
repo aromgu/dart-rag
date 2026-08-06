@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     postgres_password: str = "dart_rag_dev_password"
 
     embedding_model: str = "BAAI/bge-m3"
-    generation_model: str = "Qwen/Qwen2.5-7B-Instruct"
+    generation_model: str = "Qwen/Qwen2.5-3B-Instruct"
     hf_home: str = "./model_cache"
 
     api_host: str = "0.0.0.0"

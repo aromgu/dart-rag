@@ -16,15 +16,23 @@ psycopg2-binary==2.9.10
 pgvector==0.3.6
 
 # Embedding / Generation (HuggingFace)
-torch==2.4.1
-transformers==4.46.3
-sentence-transformers==3.3.1
-accelerate==1.1.1
+# torch/transformers/accelerate는 FlagEmbedding 설치 시 의존성 해석으로
+# 실제 설치본이 더 최신 버전으로 올라갔다(pip freeze 기준 반영).
+torch==2.13.0
+transformers==5.14.1
+FlagEmbedding==1.4.0
+accelerate==1.14.0
+bitsandbytes==0.50.0
 
 # API / UI
-fastapi==0.115.5
-uvicorn[standard]==0.32.1
+fastapi==0.141.1
+uvicorn[standard]==0.52.1
 streamlit==1.40.1
+
+# Evaluation
+ragas==0.4.3
+langchain-huggingface==1.2.2
+rank_bm25==0.2.2
 
 # Testing
 pytest==8.3.3

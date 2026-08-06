@@ -1,0 +1,4978 @@
+{
+  "summary": {
+    "bm25+breadcrumb": {
+      "recall@5": 0.05194805194805195,
+      "recall@10": 0.08441558441558442,
+      "mrr": 0.0294011544011544,
+      "value_recall@5": 0.34415584415584416,
+      "value_recall@10": 0.474025974025974,
+      "value_mrr": 0.1678159142444857,
+      "n": 154
+    },
+    "dense+bm25bc(rrf)": {
+      "recall@5": 0.16233766233766234,
+      "recall@10": 0.18831168831168832,
+      "mrr": 0.10185786435786436,
+      "value_recall@5": 0.6623376623376623,
+      "value_recall@10": 0.7987012987012987,
+      "value_mrr": 0.43197278911564624,
+      "n": 154
+    },
+    "dense+sparse(weighted)": {
+      "recall@5": 0.11688311688311688,
+      "recall@10": 0.22727272727272727,
+      "mrr": 0.07476035868893012,
+      "value_recall@5": 0.6753246753246753,
+      "value_recall@10": 0.8116883116883117,
+      "value_mrr": 0.4192022263450834,
+      "n": 154
+    },
+    "dense+bm25bc(weighted)": {
+      "recall@5": 0.12337662337662338,
+      "recall@10": 0.2532467532467532,
+      "mrr": 0.0845959595959596,
+      "value_recall@5": 0.7012987012987013,
+      "value_recall@10": 0.8116883116883117,
+      "value_mrr": 0.4362244897959184,
+      "n": 154
+    }
+  },
+  "per_item": {
+    "bm25+breadcrumb": [
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.3333333333333333,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.2,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.125,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.3333333333333333,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.3333333333333333,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.2,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.125,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      }
+    ],
+    "dense+bm25bc(rrf)": [
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.25,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.3333333333333333,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.25,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.3333333333333333,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.3333333333333333,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.25,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.3333333333333333,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.125,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.3333333333333333,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.2,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      }
+    ],
+    "dense+sparse(weighted)": [
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.3333333333333333,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.3333333333333333,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.25,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.3333333333333333,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.14285714285714285,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.25,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.125,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.2,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.25,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.14285714285714285,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.25,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.25,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.14285714285714285,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.2,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.14285714285714285,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      }
+    ],
+    "dense+bm25bc(weighted)": [
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.2,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.125,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.2,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.2,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.25,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.125,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.25,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.5,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.25,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 1.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.2,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.16666666666666666,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.14285714285714285
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 0,
+        "value_rr": 0.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.1111111111111111
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.125,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.125,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.125
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.2,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 1,
+        "recall@10": 1,
+        "rr": 0.2,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.5
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 1.0
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.2
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.25
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 0,
+        "value_recall@10": 1,
+        "value_rr": 0.16666666666666666
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 0,
+        "rr": 0.0,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      },
+      {
+        "recall@5": 0,
+        "recall@10": 1,
+        "rr": 0.1111111111111111,
+        "value_recall@5": 1,
+        "value_recall@10": 1,
+        "value_rr": 0.3333333333333333
+      }
+    ]
+  }
+}

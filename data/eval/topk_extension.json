@@ -1,0 +1,474 @@
+{
+  "summary": {
+    "hybrid_k15": {
+      "accuracy": 0.5666666666666667,
+      "n": 30
+    },
+    "hybrid_k20": {
+      "accuracy": 0.5333333333333333,
+      "n": 30
+    },
+    "hybrid_k25": {
+      "accuracy": 0.4,
+      "n": 30
+    }
+  },
+  "per_item": {
+    "hybrid_k15": [
+      {
+        "question": "LG이노텍의 매출액은 얼마인가요?",
+        "answer": "21,896,603백만원입니다.",
+        "correct": true
+      },
+      {
+        "question": "HD현대의 매출액은 얼마인가요?",
+        "answer": "71,259,438,270 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "산일전기의 매출액은 얼마인가요?",
+        "answer": "501,946,220,880 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "대한항공의 매출액은 얼마인가요?",
+        "answer": "16,501,851,540,439 원입니다.",
+        "correct": false
+      },
+      {
+        "question": "대덕전자의 영업이익은 얼마인가요?",
+        "answer": "49,061,483,387 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "LIG디펜스앤에어로스페이스의 영업이익은 얼마인가요?",
+        "answer": "LIG디펜스앤에어로스페이스의 영업이익은 319,442,306,790입니다.",
+        "correct": true
+      },
+      {
+        "question": "LG유플러스의 매출액은 얼마인가요?",
+        "answer": "14,324,685천원입니다.",
+        "correct": true
+      },
+      {
+        "question": "한화오션의 영업이익은 얼마인가요?",
+        "answer": "한화오션의 영업이익은 1,167,590,137,928 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "LG씨엔에스의 매출액은 얼마인가요?",
+        "answer": "6,129,542,718입니다.",
+        "correct": false
+      },
+      {
+        "question": "케이티앤지의 매출액은 얼마인가요?",
+        "answer": "6,579,707百万원",
+        "correct": true
+      },
+      {
+        "question": "HD현대마린솔루션의 매출액은 얼마인가요?",
+        "answer": "1,982,700,659,426仟원입니다.",
+        "correct": true
+      },
+      {
+        "question": "HD현대의 영업이익은 얼마인가요?",
+        "answer": "HD현대의 영업이익은 6조 996억원입니다.",
+        "correct": false
+      },
+      {
+        "question": "LG씨엔에스의 영업이익은 얼마인가요?",
+        "answer": "551,828,295 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "기아의 영업이익은 얼마인가요?",
+        "answer": "9,078,148원",
+        "correct": true
+      },
+      {
+        "question": "대우건설의 영업이익은 얼마인가요?",
+        "answer": "대우건설의 영업이익은 -925,744,781,108 원입니다.",
+        "correct": false
+      },
+      {
+        "question": "한진칼의 영업이익은 얼마인가요?",
+        "answer": "한진칼의 영업이익은 -7,523,512,000 원입니다.",
+        "correct": false
+      },
+      {
+        "question": "효성중공업의 매출액은 얼마인가요?",
+        "answer": "5,968,512백만원입니다.",
+        "correct": false
+      },
+      {
+        "question": "SK하이닉스의 매출액은 얼마인가요?",
+        "answer": "97,146,675 百만원",
+        "correct": true
+      },
+      {
+        "question": "이수페타시스의 영업이익은 얼마인가요?",
+        "answer": "이수페타시스의 영업이익은 204,724,531,402원입니다.",
+        "correct": false
+      },
+      {
+        "question": "대덕전자의 매출액은 얼마인가요?",
+        "answer": "1,065,294,559,811 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "포스코퓨처엠의 매출액은 얼마인가요?",
+        "answer": "2,938,698,184,392입니다.",
+        "correct": true
+      },
+      {
+        "question": "산일전기의 영업이익은 얼마인가요?",
+        "answer": "산일전기의 영업이익은 178,634,181,593 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "GS의 영업이익은 얼마인가요?",
+        "answer": "113,858,824원입니다.",
+        "correct": false
+      },
+      {
+        "question": "S-Oil의 매출액은 얼마인가요?",
+        "answer": "36,637,031입니다.",
+        "correct": false
+      },
+      {
+        "question": "현대로템의 매출액은 얼마인가요?",
+        "answer": "5,839,031,553 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "삼성전자의 영업이익은 얼마인가요?",
+        "answer": "6,566,976입니다.",
+        "correct": false
+      },
+      {
+        "question": "한화솔루션의 매출액은 얼마인가요?",
+        "answer": "133,331百万원 (13,333,055백만원)",
+        "correct": false
+      },
+      {
+        "question": "LG의 영업이익은 얼마인가요?",
+        "answer": "LG의 영업이익은 912,174백만 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "LG유플러스의 영업이익은 얼마인가요?",
+        "answer": "LG유플러스의 영업이익은 8,921억원입니다.",
+        "correct": false
+      },
+      {
+        "question": "한국항공우주의 매출액은 얼마인가요?",
+        "answer": "3,625,239,285,458 원입니다.",
+        "correct": false
+      }
+    ],
+    "hybrid_k20": [
+      {
+        "question": "LG이노텍의 매출액은 얼마인가요?",
+        "answer": "21,896,603百万원",
+        "correct": true
+      },
+      {
+        "question": "HD현대의 매출액은 얼마인가요?",
+        "answer": "HD현대의 매출액은 71,259,438,270 원입니다。",
+        "correct": true
+      },
+      {
+        "question": "산일전기의 매출액은 얼마인가요?",
+        "answer": "501,946,220,880 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "대한항공의 매출액은 얼마인가요?",
+        "answer": "25,225,542,379,502 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "대덕전자의 영업이익은 얼마인가요?",
+        "answer": "대덕전자의 영업이익은 49,061,483,387 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "LIG디펜스앤에어로스페이스의 영업이익은 얼마인가요?",
+        "answer": "LIG디펜스앤에어로스페이스의 영업이익은 319,442,306,790 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "LG유플러스의 매출액은 얼마인가요?",
+        "answer": "LG유플러스의 매출액은 15,451,745천원입니다.",
+        "correct": false
+      },
+      {
+        "question": "한화오션의 영업이익은 얼마인가요?",
+        "answer": "한화오션의 영업이익은 1,167,590,137,928 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "LG씨엔에스의 매출액은 얼마인가요?",
+        "answer": "5,449,270,878입니다.",
+        "correct": false
+      },
+      {
+        "question": "케이티앤지의 매출액은 얼마인가요?",
+        "answer": "케이티앤지의 매출액은 6,579,707백만원입니다.",
+        "correct": true
+      },
+      {
+        "question": "HD현대마린솔루션의 매출액은 얼마인가요?",
+        "answer": "HD현대마린솔루션의 매출액은 1,982,700,659,426 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "HD현대의 영업이익은 얼마인가요?",
+        "answer": "HD현대의 영업이익은 6조 996억원입니다.",
+        "correct": false
+      },
+      {
+        "question": "LG씨엔에스의 영업이익은 얼마인가요?",
+        "answer": "LG씨엔에스의 영업이익은 551,828,295 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "기아의 영업이익은 얼마인가요?",
+        "answer": "기아의 영업이익은 5,954,083 원입니다.",
+        "correct": false
+      },
+      {
+        "question": "대우건설의 영업이익은 얼마인가요?",
+        "answer": "대우건설의 영업이익은 -815,431,279,791 원입니다.",
+        "correct": false
+      },
+      {
+        "question": "한진칼의 영업이익은 얼마인가요?",
+        "answer": "한진칼의 영업이익은 -7,523,512,140 원입니다.",
+        "correct": false
+      },
+      {
+        "question": "효성중공업의 매출액은 얼마인가요?",
+        "answer": "4,894,980 百만원입니다.",
+        "correct": false
+      },
+      {
+        "question": "SK하이닉스의 매출액은 얼마인가요?",
+        "answer": "97,146,675 백만원입니다.",
+        "correct": true
+      },
+      {
+        "question": "이수페타시스의 영업이익은 얼마인가요?",
+        "answer": "152,138,714,730입니다.",
+        "correct": false
+      },
+      {
+        "question": "대덕전자의 매출액은 얼마인가요?",
+        "answer": "대덕전자의 매출액은 1,065,294,559,811 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "포스코퓨처엠의 매출액은 얼마인가요?",
+        "answer": "포스코퓨처엠의 매출액은 2,938,698,184,392 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "산일전기의 영업이익은 얼마인가요?",
+        "answer": "산일전기의 영업이익은 178,634,181,593 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "GS의 영업이익은 얼마인가요?",
+        "answer": "112,222百万원 (112,222,000,000 원)",
+        "correct": false
+      },
+      {
+        "question": "S-Oil의 매출액은 얼마인가요?",
+        "answer": "S-Oil의 매출액은 33,896,041 원입니다。",
+        "correct": false
+      },
+      {
+        "question": "현대로템의 매출액은 얼마인가요?",
+        "answer": "5,839,032,453 원입니다.",
+        "correct": false
+      },
+      {
+        "question": "삼성전자의 영업이익은 얼마인가요?",
+        "answer": "삼성전자의 영업이익은 43,601,051 백만원입니다.",
+        "correct": true
+      },
+      {
+        "question": "한화솔루션의 매출액은 얼마인가요?",
+        "answer": "133,331百万원입니다.",
+        "correct": false
+      },
+      {
+        "question": "LG의 영업이익은 얼마인가요?",
+        "answer": "LG의 영업이익은 912,174백만 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "LG유플러스의 영업이익은 얼마인가요?",
+        "answer": "892,131입니다.",
+        "correct": false
+      },
+      {
+        "question": "한국항공우주의 매출액은 얼마인가요?",
+        "answer": "3,625,239,285,458 백만원입니다.",
+        "correct": false
+      }
+    ],
+    "hybrid_k25": [
+      {
+        "question": "LG이노텍의 매출액은 얼마인가요?",
+        "answer": "21,896,603百万원",
+        "correct": true
+      },
+      {
+        "question": "HD현대의 매출액은 얼마인가요?",
+        "answer": "HD현대의 매출액은 526,073,781백만원입니다。",
+        "correct": false
+      },
+      {
+        "question": "산일전기의 매출액은 얼마인가요?",
+        "answer": "산일전기의 매출액은 501,946,220,880 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "대한항공의 매출액은 얼마인가요?",
+        "answer": "25,225,542,379,502 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "대덕전자의 영업이익은 얼마인가요?",
+        "answer": "대덕전자의 영업이익은 49,061,483,387 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "LIG디펜스앤에어로스페이스의 영업이익은 얼마인가요?",
+        "answer": "LIG디펜스앤에어로스페이스의 영업이익은 319,442,306,790입니다.",
+        "correct": true
+      },
+      {
+        "question": "LG유플러스의 매출액은 얼마인가요?",
+        "answer": "LG유플러스의 매출액은 15,451,745천원입니다。",
+        "correct": false
+      },
+      {
+        "question": "한화오션의 영업이익은 얼마인가요?",
+        "answer": "1,154,002,861,086 원입니다.",
+        "correct": false
+      },
+      {
+        "question": "LG씨엔에스의 매출액은 얼마인가요?",
+        "answer": "LG씨엔에스의 매출액은 5,449,270,878 원입니다。",
+        "correct": false
+      },
+      {
+        "question": "케이티앤지의 매출액은 얼마인가요?",
+        "answer": "4,242,122百万원 (4,242,122,000,000 원)입니다.",
+        "correct": false
+      },
+      {
+        "question": "HD현대마린솔루션의 매출액은 얼마인가요?",
+        "answer": "HD현대마린솔루션의 매출액은 1,982,700,659,426 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "HD현대의 영업이익은 얼마인가요?",
+        "answer": "HD현대의 영업이익은 6조 996억원입니다.",
+        "correct": false
+      },
+      {
+        "question": "LG씨엔에스의 영업이익은 얼마인가요?",
+        "answer": "LG씨엔에스의 영업이익은 551,828,295 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "기아의 영업이익은 얼마인가요?",
+        "answer": "기아의 영업이익은 5,954,083 원입니다.",
+        "correct": false
+      },
+      {
+        "question": "대우건설의 영업이익은 얼마인가요?",
+        "answer": "대우건설의 영업이익은 -815,431,279,791 원입니다.",
+        "correct": false
+      },
+      {
+        "question": "한진칼의 영업이익은 얼마인가요?",
+        "answer": "49,192,742원",
+        "correct": false
+      },
+      {
+        "question": "효성중공업의 매출액은 얼마인가요?",
+        "answer": "5,968,512백만원입니다.",
+        "correct": false
+      },
+      {
+        "question": "SK하이닉스의 매출액은 얼마인가요?",
+        "answer": "SK하이닉스의 매출액은 제78기 기준으로 97,146,675백만원입니다.",
+        "correct": true
+      },
+      {
+        "question": "이수페타시스의 영업이익은 얼마인가요?",
+        "answer": "이수페타시스의 영업이익은 204,724,531,402 원입니다.",
+        "correct": false
+      },
+      {
+        "question": "대덕전자의 매출액은 얼마인가요?",
+        "answer": "대덕전자의 매출액은 1,065,294,559,811 원입니다。",
+        "correct": true
+      },
+      {
+        "question": "포스코퓨처엠의 매출액은 얼마인가요?",
+        "answer": "포스코퓨처엠의 매출액은 2,676,968,855,833 원입니다。",
+        "correct": false
+      },
+      {
+        "question": "산일전기의 영업이익은 얼마인가요?",
+        "answer": "산일전기의 영업이익은 178,634,181,593 원입니다.",
+        "correct": true
+      },
+      {
+        "question": "GS의 영업이익은 얼마인가요?",
+        "answer": "185,864,137,079입니다.",
+        "correct": false
+      },
+      {
+        "question": "S-Oil의 매출액은 얼마인가요?",
+        "answer": "S-Oil의 매출액은 33,896,041백만원입니다。",
+        "correct": false
+      },
+      {
+        "question": "현대로템의 매출액은 얼마인가요?",
+        "answer": "현대로템의 매출액은 5,839,032,453 원입니다。",
+        "correct": false
+      },
+      {
+        "question": "삼성전자의 영업이익은 얼마인가요?",
+        "answer": "삼성전자의 영업이익은 제57기(당기) 기준으로 43,601,051입니다.",
+        "correct": true
+      },
+      {
+        "question": "한화솔루션의 매출액은 얼마인가요?",
+        "answer": "13,333,055百万원",
+        "correct": false
+      },
+      {
+        "question": "LG의 영업이익은 얼마인가요?",
+        "answer": "LG의 영업이익은 912,174백만원입니다.",
+        "correct": true
+      },
+      {
+        "question": "LG유플러스의 영업이익은 얼마인가요?",
+        "answer": "892,131억원입니다.",
+        "correct": false
+      },
+      {
+        "question": "한국항공우주의 매출액은 얼마인가요?",
+        "answer": "3,625,239,285,458 원입니다.",
+        "correct": false
+      }
+    ]
+  }
+}

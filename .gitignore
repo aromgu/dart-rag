@@ -5,8 +5,10 @@ venv/
 .env
 data/raw/*
 data/processed/*
+data/backups/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+!data/backups/.gitkeep
 *.log
 .DS_Store
 .pytest_cache/
