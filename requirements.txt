@@ -1,23 +1,23 @@
 # Ingestion / parsing
-requests==2.32.3
-beautifulsoup4==4.12.3
-lxml==5.3.0
-pandas==2.2.3
-tqdm==4.66.5
+requests==2.34.2
+beautifulsoup4==4.15.0
+lxml==6.1.1
+pandas==2.3.3
+tqdm==4.70.0
 
 # Config
-python-dotenv==1.0.1
-pydantic==2.9.2
-pydantic-settings==2.6.1
+python-dotenv==1.2.2
+pydantic==2.13.4
+pydantic-settings==2.14.2
 
 # DB
-SQLAlchemy==2.0.36
-psycopg2-binary==2.9.10
-pgvector==0.3.6
+SQLAlchemy==2.0.51
+psycopg2-binary==2.9.12
+pgvector==0.5.0
 
 # Embedding / Generation (HuggingFace)
-# torch/transformers/accelerate는 FlagEmbedding 설치 시 의존성 해석으로
-# 실제 설치본이 더 최신 버전으로 올라갔다(pip freeze 기준 반영).
+# 아래 버전들은 FlagEmbedding/ragas/streamlit 설치 시 의존성 해석으로
+# 실제 설치본이 초기 계획보다 최신으로 올라간 걸 pip freeze 기준으로 반영했다.
 torch==2.13.0
 transformers==5.14.1
 FlagEmbedding==1.4.0
@@ -30,9 +30,15 @@ uvicorn[standard]==0.52.1
 streamlit==1.61.1
 
 # Evaluation
+# langchain-core/langchain-community/langchain은 ragas/langchain-huggingface가
+# 끌어오는 전이 의존성인데, 버전을 안 박아두면 pip 리졸버가 langchain-community의
+# 아주 오래된 버전(langchain-core<0.2 요구)까지 뒤지다가 충돌나서 명시적으로 고정한다.
 ragas==0.4.3
 langchain-huggingface==1.2.2
+langchain-core==1.5.3
+langchain-community==0.4.2
+langchain==1.3.14
 rank_bm25==0.2.2
 
 # Testing
-pytest==8.3.3
+pytest==9.1.1
