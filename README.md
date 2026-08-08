@@ -202,6 +202,7 @@ tests/          pytest (GPU 없이 도는 것 위주)
 | [docs/experiments.md](docs/experiments.md) | 13개 비교실험 전체 기록 |
 | [docs/study.md](docs/study.md) | 파싱/청킹/임베딩/검색/평가 기법 공부 노트 |
 | [docs/summary.md](docs/summary.md) | 전체 과정 총정리(단계별 요약 + 디버깅 스토리 + 배운 교훈) |
+| [docs/case_study.md](docs/case_study.md) | 이력서/포트폴리오용 케이스 스터디 |
 
 ## 라이선스
 
