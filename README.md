@@ -201,8 +201,9 @@ tests/          pytest (GPU 없이 도는 것 위주)
 | [docs/retrieval_strategy.md](docs/retrieval_strategy.md) | 하이브리드 검색 + 재순위 설계 |
 | [docs/generation_strategy.md](docs/generation_strategy.md) | 생성 프롬프트/디코딩 설계 |
 | [docs/api_strategy.md](docs/api_strategy.md) | API/멀티턴/비동기 설계 |
-| [docs/experiments.md](docs/experiments.md) | 11개 비교실험 전체 기록 |
+| [docs/experiments.md](docs/experiments.md) | 13개 비교실험 전체 기록 |
 | [docs/study.md](docs/study.md) | 파싱/청킹/임베딩/검색/평가 기법 공부 노트 |
+| [docs/summary.md](docs/summary.md) | 전체 과정 총정리(단계별 요약 + 디버깅 스토리 + 배운 교훈) |
 
 ## 라이선스
 
