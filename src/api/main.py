@@ -4,14 +4,20 @@ Retriever/Generator는 서버 시작 시 한 번만 로드해서 app.state에 �
 실행: uvicorn src.api.main:app --host 0.0.0.0 --port 8000
 """
 
+import csv
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.concurrency import run_in_threadpool
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
 from src.generation.generator import Generator
 from src.retrieval.retriever import Retriever
+
+_UNIVERSE_CSV = Path(__file__).resolve().parents[2] / "data" / "kospi100_universe.csv"
+_STATIC_DIR = Path(__file__).resolve().parent.parent / "ui" / "static"
 
 # docs/experiments.md 실험 6: top_k가 15~20을 넘어가면 문맥 과부하로 정확도가
 # 오히려 떨어지는 게 실측으로 확인됐다 - 그 범위를 벗어나는 값을 애초에 막는다.
@@ -74,6 +80,13 @@ def health() -> dict:
     return {"status": "ok"}
 
 
+@app.get("/companies")
+def companies() -> list[str]:
+    """정적 프론트엔드(src/ui/static)의 회사 필터 드롭다운용 - CSV를 그대로 읽는다."""
+    with _UNIVERSE_CSV.open(encoding="utf-8") as f:
+        return sorted(row["corp_name"] for row in csv.DictReader(f))
+
+
 _HISTORY_TURNS_FOR_RETRIEVAL = 2  # 검색 질의에 이어붙일 최근 대화 턴 수
 
 
@@ -118,3 +131,9 @@ async def ask(req: AskRequest) -> AskResponse:
         for c in chunks
     ]
     return AskResponse(answer=answer, sources=sources)
+
+
+# API 라우트를 전부 등록한 뒤 마지막에 마운트해야, "/" 아래 정적 파일 서빙이
+# 위의 명시적 경로(/ask, /health, /companies)를 가리지 않는다.
+if _STATIC_DIR.exists():
+    app.mount("/", StaticFiles(directory=_STATIC_DIR, html=True), name="static")

@@ -156,19 +156,17 @@ curl -X POST http://localhost:8000/ask \
 
 서버 실행 후 `http://localhost:8000/docs`에서 FastAPI 자동 생성 Swagger UI로 직접 테스트할 수 있다.
 
-## Streamlit 채팅 UI
+## 웹 채팅 UI
 
-curl 대신 브라우저에서 바로 써보고 싶으면 API 서버를 먼저 띄운 뒤(위 "서버 실행" 참고) Streamlit을 실행한다:
+`uvicorn`으로 API 서버를 띄우면(위 "서버 실행" 참고) `http://localhost:8000`에서 채팅 UI가 자동으로 같이 떠 있다 - `src/ui/static/index.html`을 FastAPI가 정적 파일로 서빙한다. Tailwind CSS + Flowbite를 CDN으로 불러오는 순수 HTML/JS라 별도 빌드 도구(Node.js/npm)가 필요 없다. 채팅창, 회사 필터, 답변 근거자료(펼치기), 라이트/다크 테마 토글을 제공한다.
+
+### Streamlit 버전 (대안)
 
 ```bash
 streamlit run src/ui/streamlit_app.py
 ```
 
-`http://localhost:8501`에서 채팅창, 회사 필터(사이드바), 답변 근거자료(펼치기)를 바로 확인할 수 있다. API가 다른 주소에 떠 있으면 `DART_RAG_API_URL` 환경변수로 지정한다:
-
-```bash
-DART_RAG_API_URL=http://localhost:8000 streamlit run src/ui/streamlit_app.py
-```
+`http://localhost:8501`에서 뜨는 별도 Streamlit 버전도 있다(기능은 동일, API가 다른 주소에 있으면 `DART_RAG_API_URL` 환경변수로 지정).
 
 ## 프로젝트 구조
 
@@ -182,7 +180,7 @@ src/
   retrieval/    하이브리드 검색 + 재순위
   generation/   Qwen2.5-3B 답변 생성
   api/          FastAPI 서버
-  ui/           Streamlit 채팅 UI (API 클라이언트)
+  ui/           채팅 UI - static/(Tailwind+Flowbite, FastAPI가 서빙) + streamlit_app.py(대안)
   evaluation/   평가 지표(Recall@k/MRR, RAGAS 연동)
 scripts/        파이프라인 실행/실험 스크립트
 docs/           설계 문서 + 실험 기록 (아래 참고)
